@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #F3F5FC;
+
+}
+
+.container-main {
+    margin: 0 auto;
+
+    width: 100%;
+    max-width: 1440px;
+    min-height: 100vh;
+    padding: 40px;
+    display: flex;
+    gap: 80px;
+}
+
+.container-box-main {
+
+    height: auto;
+    width: 100%;
+    max-width: 880px;
+}
+
+.container-box-main h1 {
+    width: 31.09px;
+    height: 48px;
+    margin-bottom: 80px;
+}
+
+.container-box-main .div-textarea {
+    width: 100%;
+    text-align: end;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+
+}
+
+.container-box-main .div-textarea textarea {
+    margin-bottom: 380px;
+    width: 100%;
+    max-width: 680px;
+    height: 280px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+
+    font-weight: 400;
+    font-size: 28px;
+    color: #0A3871;
+}
+
+.container-box-main .div-textarea textarea::placeholder {
+    font-weight: 400;
+    font-size: 32px;
+    color: #0A3871;
+}
+
+.container-box-main .div-textarea textarea::-webkit-scrollbar {
+    width: 0;
+}
+
+.div-textarea .tamanho {
+    width: 100%;
+    text-align: start;
+    padding-left: 200px;
+}
+
+.div-textarea .warning {
+    width: 100%;
+    max-width: 230px;
+
+}
+
+.container-box-main .buttons {
+    width: 100%;
+    text-align: end;
+}
+
+.container-box-main .buttons button,
+.texto-criptografado button {
+    width: 100%;
+    max-width: 328px;
+    font-size: 16px;
+    height: 67px;
+    padding: 24px;
+    background: #0A3871;
+    border-radius: 24px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 400;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.buttons button:last-of-type {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Segunda caixa*/
+
+.container-box-second {
+    padding: 32px;
+    height: calc(944px - 40px);
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    background: #FFFFFF;
+}
+
+
+
+.texto-criptografado {
+    width: 100%;
+    max-width: 336px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.texto-criptografado textarea {
+    width: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    height: calc(781px - 32px);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+}
+
+.texto-criptografado button {
+    background: transparent;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    margin-top: 32px;
+}
+
+.texto-criptografado {
+    display: none;
+}
+
+.texto-criptografado.com {
+    display: flex;
+}
+
+.sem-conteudo {
+    text-align: center;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sem-conteudo img {
+    width: 100%;
+    max-width: 336px;
+    /* height: 304px; */
+}
+
+.sem-conteudo h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #343A40;
+}
+
+.sem-conteudo p {
+    color: #495057;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.sem-conteudo.none {
+    display: none;
+}
+
+
+/*MEDIA QUERY 1366px*/
+@media screen and (max-width:1366px) {
+
+    .container-box-main .div-textarea textarea {
+        height: 22vh;
+        margin: 0;
+        margin-bottom: 15rem;
+    }
+
+    .container-box-main .buttons {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-box-main .buttons button {
+        width: 200px;
+    }
+
+    .container-box-second {
+        height: auto;
+    }
+
+    .texto-criptografado textarea {
+        height: 75vh;
+    }
+}
+
+@media screen and (max-width:1026px) {
+
+
+    .container-box-main .buttons button {
+        /* width: 100%; */
+        max-width: 150px;
+        line-height: -50px;
+        font-size: 15px;
+    }
+
+
+}
+
+/*MEDIA QUERY 1026px*/
+
+
+@media screen and (max-width:1026px) {
+
+    .container-box-main .buttons button {
+        width: 100%;
+        max-width: 170px;
+        line-height: -50px;
+        font-size: 15px;
+    }
+
+}
+
+/*MEDIA QUERY 768*/
+
+@media screen and (max-width:768px) {
+
+
+    .container-main {
+        display: block;
+    }
+
+    .container-box-main .div-textarea textarea {
+        height: 17vh;
+        margin: 0;
+        margin-bottom: 15rem;
+    }
+    .div-textarea .tamanho{
+        padding: 0;
+        padding-left: 20px;
+    }
+    .container-box-main .buttons {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+  
+    }
+    .container-box-main .buttons button {
+        max-width: none;
+        width: 100%;
+    }
+
+    .container-box-second {
+        margin: 64px auto;
+        padding: 32px;
+        width: 100%;
+        max-width: 688px;
+    }
+
+    .texto-criptografado textarea {
+        height: auto;
+    }
+
+    .container-box-second .sem-conteudo img{
+        display: none;
+    }
+
+}
+
+/*MEDIA QUERY 375*/
+
+@media screen and (max-width:375px) {
+
+    
+    .container-box-main .div-textarea textarea {
+        height: 20vh;
+       margin: 0;
+    }
+   
+    .container-box-main .buttons {
+      display: block;
+      width: 100%;
+  
+    }
+   
+
+    .texto-criptografado textarea {
+        height: auto;
+    }
+
+    .container-box-second {
+        margin: 32px auto;
+       
+    }
+
+    .container-box-second .sem-conteudo img{
+        display: none;
+    }
+
+}
